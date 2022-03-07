@@ -117,6 +117,7 @@ carousel-item.active {
 footer {
   background-color: #a1a1a1;
   padding: 1rem 2rem 3rem;
+  border-top: .1rem solid #4981b3;
 }
 
 footer a {
@@ -127,13 +128,20 @@ footer a {
 ul.social {
   list-style-type: none;
   display: flex;
-  max-width: 16rem;
+  max-width: 2000rem;
   margin: 0 auto;
+  padding-left: 0px;
 }
 
 ul.social li {
   margin: 0 auto;
   font-size: 2.3rem;
+}
+
+.socket {
+  background-color: #5EC5FF;
+  border-top: .1rem solid #4981b3;
+  font: white;
 }
 
 /*============= MEDIA QUERIES =============*/
