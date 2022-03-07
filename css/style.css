@@ -44,7 +44,6 @@ body {
   color: #5EC5FF!important;
 }
 
-
 /*============= CAROUSEL =============*/
 
 #carousel {
@@ -52,9 +51,8 @@ body {
 }
 
 .carousel-inner {
-  max-height: 70rem!important;
+  max-height: 100rem!important;
 }
-
 
 /*---Change Carousel Transition Speed --*/
 .carousel-item-next,
@@ -66,7 +64,7 @@ carousel-item.active {
 /*-- Carousel Content --*/
 .carousel-caption {
   position:absolute;
-  top: 54%;
+  top: 50%;
   transform: translateY(-50%);
   text-transform: uppercase;
 }
@@ -77,35 +75,88 @@ carousel-item.active {
   border-radius: 1rem;
 }
 
-
-/*===== FIXED BACKGROUND IMG =====*/
-
-.fixed-background {
-  overflow: hidden; /*-- Correction for iOS --*/
+.carousel-caption h1 {
+  font-size: 2rem;
+  text-shadow: .1rem .1rem .3rem rgba(0, 0, 0, 1);
 }
 
+.border-primary {
+  border-top: .2rem solid #5EC5FF!important;
+}
 
-/*-- Emoji Navbar --*/
+.carousel-caption h3 {
+  font-size: 1rem;
+  text-shadow: .1rem .1rem .2rem rgba(0, 0, 0, 1);
+}
 
+.btn-lg {
+  border-radius: 0;
+  text-transform: uppercase;
+  font-size: 1rem;
+  border-width: medium;
+}
 
+.btn-danger {
+  background-color: #AC2615;
+  border: .1rem solid #AC2615;
+}
+
+.btn-primary {
+  background-color: #5EC5FF;
+  border: .1rem solid #5EC5FF;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #68a0d2!important;
+  border: .1rem solid #68a0d2;
+}
 
 /*============= FOOTER =============*/
 
+footer {
+  background-color: #a1a1a1;
+  padding: 1rem 2rem 3rem;
+}
 
+footer a {
+  color: white;
+  text-decoration: none;
+}
 
-/*============= SOCKET =============*/
+ul.social {
+  list-style-type: none;
+  display: flex;
+  max-width: 16rem;
+  margin: 0 auto;
+}
 
-
+ul.social li {
+  margin: 0 auto;
+  font-size: 2.3rem;
+}
 
 /*============= MEDIA QUERIES =============*/
 
 /* Devices under 1199px (xl) */
 @media (max-width: 1199.98px) {
-
+  .carousel-caption h1 {
+    font-size: 2rem;
+  }
+  
+  .carousel-caption h3 {
+    font-size: 1.5rem;
+  }
 }
-/* Devices under 768px (md) */
-@media (max-width: 767.98px) {
-
+/* Devices under 992px (lg) */
+@media (max-width: 991.98px) {
+  .carousel-caption h1 {
+    font-size: 1.5rem;
+  }
+  
+  .carousel-caption h3 {
+    font-size: 1rem;
+  }
 }
 
 
